@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Air Quality in Dublin</title>
+
+  <!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="js/leaflet.css" />
+
+  <!-- JS -->
+  <script src="js/leaflet.js"></script>
+  <script src="js/leaflet-heat.js"></script>
+
+</head>
+
+<body>
+  
+  <!-- Slider -->
+	<div class="slider-container">
+		<input type="range" class="slider" id="myRange">
+    <p><span id="value_slider"></span></p>
+	</div>
+
+  <!-- Map -->
+  <div id="map"></div>
+
+  <!-- Select -->
+  <select id="pm-select">
+    <option value="pm25">PM2,5</option>
+    <option value="pm10">PM10</option>
+  </select>
+
+  <!-- PlayButton -->
+  <button class="slider-button" id="playButton">Play</button>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+  <script src="scriptGetData.js"></script>
+  
+</body>
+</html>
